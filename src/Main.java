@@ -7,7 +7,9 @@ public class Main {
 
         int wylosowana = (int)(Math.random()*10+1);
         System.out.println(wylosowana);
+
         Scanner klawiatura = new Scanner(System.in);
+        int wpisanaLiczba = klawiatura.nextInt();
     }
 }
 /*
