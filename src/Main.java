@@ -6,7 +6,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("Witaj ponownie");
 
-        int wylosowana = (int)(Math.random()*10+1);
+        int wylosowana = (int)(Math.random()*100+1);
         System.out.println(wylosowana);
 
         System.out.println("Zgadnij liczbe z zakresu od 1 do 10");
@@ -19,6 +19,26 @@ public class Main {
         }
         else{
             System.out.println("Nie trafiono spróbuj ponownie");
+        }
+        //wyrażenie warunkowe, : to else
+        String komunikat = wylosowana == wpisanaLiczba ? "Poprawnie":"Niepoprawnie";
+        System.out.println(komunikat);
+
+        int roznica = wylosowana>wpisanaLiczba ? wylosowana - wpisanaLiczba:wpisanaLiczba-wylosowana;
+        roznica = roznica/10;//dzielenie całkowite bo wynik typu int
+        //instrukcja switch
+        switch (roznica){
+            case 0:
+                System.out.println("Brawo");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko");
+                break;
+            case 2:
+                System.out.println("Dość blisko");
+                break;
+            default:
+                System.out.println("Spróbuj szczęścia kiedy indziej");
         }
     }
 }
