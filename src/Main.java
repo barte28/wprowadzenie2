@@ -1,3 +1,4 @@
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class Main {
@@ -8,8 +9,10 @@ public class Main {
         int wylosowana = (int)(Math.random()*10+1);
         System.out.println(wylosowana);
 
+        System.out.println("Zgadnij liczbe z zakresu od 1 do 10");
         Scanner klawiatura = new Scanner(System.in);
         int wpisanaLiczba = klawiatura.nextInt();
+        System.out.println("Wpisano z klawiatury: "+wpisanaLiczba);
     }
 }
 /*
