@@ -1,3 +1,46 @@
+/*
+kartkowka:
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Random random = new Random();
+        List<Integer> liczby = new ArrayList<>();
+
+        for (int i = 0; i < 70; i++) {
+            int liczba = random.nextInt(51) + 50;
+            liczby.add(liczba);
+        }
+
+        System.out.println("Liczby podzielne przez 3: ");
+        for (int liczba : liczby){
+            if(liczba % 3 == 0){
+                System.out.println(liczba + " ");
+            }
+        }
+
+        System.out.println();
+
+        System.out.println("Podaj hasło do zaszyfrowania: ");
+        Scanner scanner = new Scanner(System.in);
+        String haslo = scanner.nextLine();
+        String zaszyfrowaneHaslo = szyfruj(haslo);
+        System.out.println("Zaszyfrowane hasło: " + zaszyfrowaneHaslo);
+    }
+    private static String szyfruj(String haslo){
+        char[] znaki = haslo.toCharArray();
+        for (int i = 0; i < znaki.length - 1; i += 2) {
+            char temp = znaki [i];
+            znaki [i] = znaki [i + 1];
+            znaki [i + 1] = temp;
+        }
+        return new String(znaki);
+    }
+}
+*/
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
