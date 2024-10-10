@@ -41,6 +41,43 @@ public class Main {
     }
 }
 */
+
+
+/*
+import java.util.Scanner;
+
+public class Euklides {
+    
+    // Funkcja obliczająca NWD
+    public static int nwd(int a, int b) {
+        while (a != b) {
+            if (a > b) {
+                a = a - b;
+            } else {
+                b = b - a;
+            }
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // Pobranie dwóch liczb od użytkownika
+        System.out.println("Podaj pierwszą liczbę (a): ");
+        int a = scanner.nextInt();
+        
+        System.out.println("Podaj drugą liczbę (b): ");
+        int b = scanner.nextInt();
+
+        // Wywołanie funkcji i wyświetlenie wyniku
+        int wynik = nwd(a, b);
+        System.out.println("Największy wspólny dzielnik (NWD) dla liczb " + a + " i " + b + " to: " + wynik);
+        
+        scanner.close();
+    }
+}
+*/
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
